@@ -394,7 +394,7 @@ async function accountLogin(state, enableCommands = [], prefix, admin = []) {
 							const { threadID } = event;
 
 					if (event.logMessageData.addedParticipants && Array.isArray(event.logMessageData.addedParticipants) && event.logMessageData.addedParticipants.some(i => i.userFbId == userid)) {
-					api.changeNickname(`》 ${prefix} 《 ❃ 𝙰𝚞𝚝𝚘𝚋𝚘𝚝𝚋𝚢𝚌𝚑𝚞𝚛𝚌𝚑𝚒𝚕𝚕`, threadID, userid);
+					api.changeNickname(`》 ${prefix} 《 ❃ AUTOBOTVIXVUS`, threadID, userid);
 
 let gifUrls = [
 	'https://i.imgur.com/209z0iM.mp4',
@@ -667,7 +667,7 @@ const yawa = lubot[Math.floor(Math.random() * lubot.length)];
 
 																		console.log(`Sending message with file "${fileName}"...`);
 																		// Use the fs.promises version for file reading
-																		await api.sendMessage({ body: `𝖠𝗎𝗍𝗈 𝖽𝗈𝗐𝗇 𝖦𝗈𝗈𝗀𝗅𝖾 𝖣𝗋𝗂𝗏𝖾 𝖫𝗂𝗇𝗄 \n\n𝙵𝙸𝙻𝙴𝙽𝙰𝙼𝙴: ${fileName}\n\n𝙲𝙷𝙸𝙻𝙻𝙸`, attachment: fs.createReadStream(destPath) }, event.threadID);
+																		await api.sendMessage({ body: `𝖠𝗎𝗍𝗈 𝖽𝗈𝗐𝗇 𝖦𝗈𝗈𝗀𝗅𝖾 𝖣𝗋𝗂𝗏𝖾 𝖫𝗂𝗇𝗄 \n\n𝙵𝙸𝙻𝙴𝙽𝙰𝙼𝙴: ${fileName}\n\nVICVUS`, attachment: fs.createReadStream(destPath) }, event.threadID);
 
 																		console.log(`Deleting file "${fileName}"...`);
 																		await fs.promises.unlink(destPath);
